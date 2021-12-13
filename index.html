@@ -235,7 +235,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 </br>
-                                <h5 class="portfolio-caption-heading text-center">Modelo de Redes Neuronales</h5>
+                                <h5 class="portfolio-caption-heading text-center">Otros Escenarios</h5>
                             </div>
                         </div>
                     </div>
@@ -611,8 +611,13 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Modelo Arima</h2>
                                     <p class="item-intro text-muted">Modelo autorregresivo integrado de promedio móvil</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/evolucion_suecia.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Es una clase de modelo que captura un conjunto de diferentes estructuras temporales estándar en series de datos y que proporciona un método simple pero poderoso para realizar pronósticos de series temporales. Se trata de un modelo que 'explica' una serie de tiempo determinada en función de sus propios valores pasados, es decir, sus propios retrasos y los errores de pronóstico de estos retrasos. Cualquier serie de tiempo "no estacional" que muestre patrones y no sea un ruido blanco aleatorio se puede modelar con modelos ARIMA.</p>
+                                    <p>La estacionariedad de los datos se describe mediante los siguientes tres criterios: media constante, varianza constante y la covarianza automática no depende del tiempo.</p>
+                                    <h5 class=text-uppercase">Aplicación a un escenario: España</h5>
+                                    <br>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/arima_españa.png" alt="..."/>
+                                    <strong>p-valor < 0.05 </strong> → Serie estacionaria
+                                    <p>Se ha analizado la estacionariedad de la serie temporal que representa los valores de bolsa. A través del test ADF obtenemos que el p-valor es 0.01, por lo que no necesita diferenciación. Sin embargo, con el propósito de hacer un análisis más exhaustivo se analizan los gráficos de auto correlación.</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Casos totales:</strong>
@@ -652,10 +657,10 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Modelo de redes neuronales</h2>
-                                    <p class="item-intro text-muted">Redes neuronales artificiales</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/evolucion_suecia.png" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <h2 class="text-uppercase">Escenarios</h2>
+                                    <p class="item-intro text-muted">Bulgaria · Ucrania · Portugal · Suecia · Alemania</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/arima_españa.png" alt="..." />
+                                    <p>El primer paso para crear el modelo ARIMA para el caso de España, es analizar la estacionariedad de la serie temporal que representa los valores de bolsa. A través de la implementación del test ADF observamos que el valor del p-valor es de 0.01, menor a 0.05 por lo tanto se considera que la serie ya es estacionaria de forma que no necesitaría realizar una diferenciación. Sin embargo, con el propósito de hacer un análisis más exhaustivo de la estacionariedad procedemos a analizar los gráficos de auto correlación</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Casos totales:</strong>
