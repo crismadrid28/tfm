@@ -558,25 +558,45 @@
                                     <p>La estacionariedad de los datos se describe mediante los siguientes tres criterios: media constante, varianza constante y la covarianza automática no depende del tiempo.</p>
                                     <h5 class=text-uppercase">Aplicación a un escenario: España</h5>
                                     <br>
+                                    <p>Se ha analizado la estacionariedad de la serie temporal que representa los valores de bolsa. A través del test ADF obtenemos que el p-valor es 0.01, por lo que no necesita diferenciación. Sin embargo, con el propósito de hacer un análisis más exhaustivo se analizan los gráficos de auto correlación.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/arima_españa.png" alt="..."/>
                                     <strong>p-valor < 0.05 </strong> → Serie estacionaria
-                                    <p>Se ha analizado la estacionariedad de la serie temporal que representa los valores de bolsa. A través del test ADF obtenemos que el p-valor es 0.01, por lo que no necesita diferenciación. Sin embargo, con el propósito de hacer un análisis más exhaustivo se analizan los gráficos de auto correlación.</p>
+                                    <p>Al observar el gráfico para el primer orden de diferenciación se ve que la serie temporal cuenta con un lag prominente mientras que el resto se encuentran dentro de la zona límite. Analizando el gráfico de auto correlación para la segunda diferenciación, el retraso entra en la zona negativa rápidamente, lo que indica que la serie podría haber sido sobre diferenciada si usamos dos diferenciaciones. Por tanto, tras realizar el test ADF, se sugiere el uso de d=0 para la serie temporal, de forma que la serie es estacionaria. </p>
+                                    <h5 class=text-uppercase">Término AR(p)</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/termino_AR.jpg" alt="..."/>
+                                    <p>Para el término AR se analizan los gráficos de auto correlación parcial. Se observa que el retraso PACF 1 es significativo (por encima de la línea de importancia), el retardo 2 también es significativo, ya que cruza levemente el límite de significancia (región azul). Se fijará p=1 para el modelo.</p>
+                                    <h5 class=text-uppercase">Término MA(q)</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/termino_MA.jpg" alt="..."/>
+                                    <p>Tras este análisis se va a generar el modelo Arima con los parámetros d=1, p=1 y q=1 ya que para d=0, p=1 y q=1 se obtiene un p-valor no significativo, por lo que continuamos con el modelo AR(1,1,1), donde si son significativos y arroja mejores resultados presentando un mejor valor de la métrica AIC.</p>
+                                    <h5 class=text-uppercase">Errores residuales</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/errores_residuales.jpg" alt="..."/>
+                                    <p>Los errores residuales presentan una media cercana a cero y una varianza uniforme.</p>
+                                    <h5 class=text-uppercase">Datos reales vs. datos ajustados</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/real_vs_ajustado.jpg" alt="..."/>
+                                    <h5 class=text-uppercase">Rendimiento</h5>
+                                    <p>Entre las diferentes combinaciones de los parámetros del modelo, el que aporta una mejor predicción es el modelo ARIMA(1,1,1).</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/rendimiento.jpg" alt="..."/>
+                                    <p>Se calcula la métrica de precisión error de porcentaje absoluto medio (MAPE). Se observa que la serie temporal tiene un valor para la métrica MAPE de 3.2% lo que implica que el modelo es 96.8% preciso en predecir las siguientes 27 observaciones.</p>
                                     <ul class="list-inline">
                                         <li>
-                                            <strong>Casos totales:</strong>
-                                            1.182.471
+                                            <strong>Modelo Arima</strong>
+                                            (1,1,1)
                                         </li>
                                         <li>
-                                            <strong>Fallecidos totales:</strong>
-                                            15.082
+                                            <strong>Media </strong>
+                                            ≈ 0
                                         </li>
                                         <li>
-                                            <strong>Casos últimos 28 días:</strong>
-                                            20.538
+                                            <strong>Varianza:</strong>
+                                            Uniforme
                                         </li>
                                         <li>
-                                            <strong>Fallecidos últimos 28 días:</strong>
-                                            126
+                                            <strong>MAPE:</strong>
+                                            3.2% → 96.8% preciso
+                                        </li>
+                                        <li>
+                                            <strong>Predicción:</strong>
+                                            27 observaciones
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
