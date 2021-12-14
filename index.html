@@ -235,7 +235,7 @@
                             </a>
                             <div class="portfolio-caption">
                                 </br>
-                                <h5 class="portfolio-caption-heading text-center">Auto Arima</h5>
+                                <h5 class="portfolio-caption-heading text-center">Auto - Arima</h5>
                             </div>
                         </div>
                     </div>
@@ -680,26 +680,21 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Escenarios</h2>
                                     <p class="item-intro text-muted">Bulgaria · Ucrania · Portugal · Suecia · Alemania</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/arima_españa.png" alt="..." />
-                                    <p>El primer paso para crear el modelo ARIMA para el caso de España, es analizar la estacionariedad de la serie temporal que representa los valores de bolsa. A través de la implementación del test ADF observamos que el valor del p-valor es de 0.01, menor a 0.05 por lo tanto se considera que la serie ya es estacionaria de forma que no necesitaría realizar una diferenciación. Sin embargo, con el propósito de hacer un análisis más exhaustivo de la estacionariedad procedemos a analizar los gráficos de auto correlación</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Casos totales:</strong>
-                                            1.182.471
-                                        </li>
-                                        <li>
-                                            <strong>Fallecidos totales:</strong>
-                                            15.082
-                                        </li>
-                                        <li>
-                                            <strong>Casos últimos 28 días:</strong>
-                                            20.538
-                                        </li>
-                                        <li>
-                                            <strong>Fallecidos últimos 28 días:</strong>
-                                            126
-                                        </li>
-                                    </ul>
+                                    <h5 class=text-uppercase">Bulgaria</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/prediccion_bulgaria.png" alt="..." />
+                                    <p class="texto-justificado">Los errores fluctúan alrededor de una media de cero y tienen una varianza uniforme. La gráfica de densidad presenta una distribución normal con media cero. El gráfico Q-Q muestra todos los puntos alineados con la línea roja. El correlograma, muestra que los errores residuales no están auto correlacionados. Una vez que todas las métricas se encuentran dentro de los parámetros adecuados, se procede a realizar la <strong>predicción de la bolsa de valores para los 22 siguientes días.</strong></p>
+                                    <h5 class=text-uppercase">Ucrania</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/prediccion_ucrania.png" alt="..." />
+                                    <p class="texto-justificado">Los errores presentan una fluctuación que no se ciñe alrededor de una media de cero y tienen una varianza que no es uniforme. La gráfica de densidad presenta una distribución que no es normal. El gráfico Q-Q muestra una desviación de los puntos con respecto a la línea roja. El correlograma, muestra que algunos errores residuales están auto correlacionados, debido a que sobresalen del límite. Cualquier auto correlación implica que existe algún patrón en los errores residuales que no se explican en el modelo. Por lo tanto, se deberá buscar más predictores en el modelo. Una vez que todas las métricas se encuentran dentro de los parámetros adecuados, se procede a realizar la <strong>predicción de la bolsa de valores para los 21 siguientes días.</strong></p>
+                                    <h5 class=text-uppercase">Portugal</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/prediccion_portugal.png" alt="..." />
+                                    <p class="texto-justificado">Los errores presentan una fluctuación alrededor de una media de cero pero muestran una varianza que no es uniforme. La gráfica de densidad presenta una distribución que es normal con media 0. El gráfico Q-Q muestra alineación de los puntos con respecto a la línea roja. El correlograma, muestra que los errores residuales no están auto correlacionados. En términos generales, se trata de un <strong>modelo buen predictor.</strong></p>
+                                    <h5 class=text-uppercase">Suecia</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/prediccion_suecia.png" alt="..." />
+                                    <p class="texto-justificado">Los errores presentan una fluctuación alrededor de una media de cero con una varianza que es uniforme. La gráfica de densidad presenta una distribución que es normal con media 0. El gráfico Q-Q muestra alineación de los puntos con respecto a la línea roja. El correlograma, muestra que los errores residuales no están auto correlacionados. De esta forma, se concluye que se trata de un modelo con una <strong>buena capacidad de predicción.</strong></p>
+                                    <h5 class=text-uppercase">Alemania</h5>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/prediccion_alemania.png" alt="..." />
+                                    <p class="texto-justificado">Los errores presentan una fluctuación alrededor de una media de cero con una varianza que es uniforme. La gráfica de densidad presenta una distribución que es normal con media 0. El gráfico Q-Q muestra alineación de los puntos con respecto a la línea roja. El correlograma, muestra que los errores residuales no están auto correlacionados. Tras realizar el análisis del modelo se concluye que se trata de un modelo con una <strong>buena capacidad de predicción</strong> tal y como puede observarse en el gráfico, ajustándose a la tendencia de los datos.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
                                         Cerrar
