@@ -563,19 +563,19 @@
                                     <strong>p-valor < 0.05 </strong> → Serie estacionaria
                                     <p>Al observar el gráfico para el primer orden de diferenciación se ve que la serie temporal cuenta con un lag prominente mientras que el resto se encuentran dentro de la zona límite. Analizando el gráfico de auto correlación para la segunda diferenciación, el retraso entra en la zona negativa rápidamente, lo que indica que la serie podría haber sido sobre diferenciada si usamos dos diferenciaciones. Por tanto, tras realizar el test ADF, se sugiere el uso de d=0 para la serie temporal, de forma que la serie es estacionaria. </p>
                                     <h5 class=text-uppercase">Término AR(p)</h5>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/termino_AR.jpg" alt="..."/>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/termino_AR.png" alt="..."/>
                                     <p>Para el término AR se analizan los gráficos de auto correlación parcial. Se observa que el retraso PACF 1 es significativo (por encima de la línea de importancia), el retardo 2 también es significativo, ya que cruza levemente el límite de significancia (región azul). Se fijará p=1 para el modelo.</p>
                                     <h5 class=text-uppercase">Término MA(q)</h5>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/termino_MA.jpg" alt="..."/>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/termino_MA.png" alt="..."/>
                                     <p>Tras este análisis se va a generar el modelo Arima con los parámetros d=1, p=1 y q=1 ya que para d=0, p=1 y q=1 se obtiene un p-valor no significativo, por lo que continuamos con el modelo AR(1,1,1), donde si son significativos y arroja mejores resultados presentando un mejor valor de la métrica AIC.</p>
                                     <h5 class=text-uppercase">Errores residuales</h5>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/errores_residuales.jpg" alt="..."/>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/errores_residuales.png" alt="..."/>
                                     <p>Los errores residuales presentan una media cercana a cero y una varianza uniforme.</p>
                                     <h5 class=text-uppercase">Datos reales vs. datos ajustados</h5>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/real_vs_ajustado.jpg" alt="..."/>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/real_vs_ajustado.png" alt="..."/>
                                     <h5 class=text-uppercase">Rendimiento</h5>
                                     <p>Entre las diferentes combinaciones de los parámetros del modelo, el que aporta una mejor predicción es el modelo ARIMA(1,1,1).</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/rendimiento.jpg" alt="..."/>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/rendimiento.png" alt="..."/>
                                     <p>Se calcula la métrica de precisión error de porcentaje absoluto medio (MAPE). Se observa que la serie temporal tiene un valor para la métrica MAPE de 3.2% lo que implica que el modelo es 96.8% preciso en predecir las siguientes 27 observaciones.</p>
                                     <ul class="list-inline">
                                         <li>
